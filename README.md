@@ -39,6 +39,7 @@ wenige Minuten        liest, ordnet, ersetzt     gliedert, prüft, stellt Rückf
 ## 3. Ablauf
 
 **A. Sachverhalt sammeln**
+
 1. Einleitung der prüfenden Person: Lage, Problem, Ziel, Aufgabe – getippt oder gesprochen.
 2. Der Ordner wird unverändert übergeben: Scans, Fotos, PDF, Chat-Auszüge, Sprachnachrichten, Notizen. Alles wird lokal gelesen.
 3. Annahme: Was lesbar war, was nicht, und warum – als Protokoll. Unlesbares geht nicht ins Blatt.
@@ -48,9 +49,11 @@ wenige Minuten        liest, ordnet, ersetzt     gliedert, prüft, stellt Rückf
 7. Das externe Modell gliedert den Fall und stellt Rückfragen in Rollenmarken; die prüfende Person sieht sie mit Klarnamen und antwortet frei. Das wiederholt sich, bis sie »genug« sagt.
 
 **B. Arbeit am Vorschlag**
+
 Das Modell legt Varianten vor – jede mit Norm, Voraussetzungen, Rechenweg, Fristen und nötigen Unterlagen. Die prüfende Person kommentiert; der Sekretär gibt die Kommentare in Rollenmarken zurück.
 
 **C. Ergebnis**
+
 Der Sekretär setzt die Namen wieder ein und stellt das Ergebnis und die offenen Fragen getrennt dar.
 
 **Regel für den Inhalt:** Es werden alle Varianten dargestellt; keine wird ausgewählt, und Personen werden nicht bewertet. Die Auswahl trifft ein Mensch.
