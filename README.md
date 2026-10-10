@@ -1,22 +1,26 @@
 # Schweigepflicht-Gateway: Arbeitsschema / working scheme
 
-**Stand: 10.10.2026 · Fassung 0.1 – nicht endgültig.** Dieses Dokument beschreibt das Schema, nach dem ich vertrauliche Unterlagen mit großen Sprachmodellen bearbeite, ohne die Unterlagen selbst herauszugeben. Der Programmcode folgt in eigenen Veröffentlichungen.
+**Stand: 10.10.2026 · Fassung 0.2 – nicht endgültig.** Dieses Dokument beschreibt das Schema, nach dem ich vertrauliche Unterlagen mit großen Sprachmodellen bearbeite, ohne die Unterlagen selbst herauszugeben. Der Programmcode folgt in eigenen Veröffentlichungen.
 
-*Status: 10 Oct 2026 · version 0.1 – not final. This document describes the scheme by which I process confidential documents with large language models without handing over the documents themselves. The code will follow in separate publications. English version below.*
+*Status: 10 Oct 2026 · version 0.2 – not final. This document describes the scheme by which I process confidential documents with large language models without handing over the documents themselves. The code will follow in separate publications. English version below.*
 
 Autor: Sergei Sevriukov, LeckerMath, Dortmund · https://leckermath.de · Text: CC BY 4.0
+
+Zum Hintergrund: 25 Jahre Bank, interne Kontrolle und Prüfung; Schulungen und Zertifizierung im Qualitätsmanagement (ISO 9001, internes Audit). Der Beitrag dieses Schemas liegt in der Organisation des Ablaufs, nicht in besonderem Programmcode.
 
 ---
 
 ## 1. Ausgangspunkt
 
-Wer vertrauliche Zahlen und Schreiben prüft, steht vor einer schlechten Wahl: auf leistungsfähige Sprachmodelle verzichten oder Unterlagen an einen zentralen Anbieter geben. Modelle, die auf eigener Hardware laufen, antworten bei schwierigen fachlichen Fragen deutlich schwächer als die großen; dieser Abstand lässt sich von einem Einzelnen nicht aufholen. Große Modelle wiederum nennen Fundstellen und Regelungen, die es nicht gibt.
+Große Sprachmodelle werden von großen Teams gebaut; mit ihnen in Konkurrenz zu treten, ist für eine kleine Kanzlei oder eine einzelne Buchhalterin sinnlos – und unnötig. Große Prüfungs- und Beratungsgesellschaften haben eigene Lösungen. Die Frage ist eine andere: Was tun die gewöhnlichen Fachleute, die auf diese Modelle angewiesen sind, obwohl die Modelle häufig Falsches behaupten und vertrauliche Unterlagen nicht sehen dürfen?
 
-Das Schema verbindet deshalb drei Dinge, die jedes für sich bekannt sind, zu einem Ablauf:
+Die Antwort dieses Schemas: **Man vertraut dem eigenen Textbestand und prüft daran alles, was die großen Modelle sagen** – durch das Prisma der eigenen Ausbildung, des eigenen Wissens und der eigenen Praxis. Dazu werden drei Dinge, die jedes für sich bekannt sind, zu einem Ablauf verbunden:
 
 1. eine **lokale Schicht**, die Unterlagen liest, die Beteiligten erkennt und vor der Weitergabe durch Rollenmarken ersetzt;
-2. **große externe Sprachmodelle**, die nur dieses Blatt sehen und die fachliche Arbeit leisten;
+2. **große externe Sprachmodelle**, die nur dieses Blatt sehen und die fachliche Arbeit leisten – austauschbar, sobald ein besseres erscheint;
 3. einen **eigenen, geprüften Bestand amtlicher Texte**, an dem jede Antwort per Programm kontrolliert wird – mit anschließender Rückführung der Namen, wieder lokal.
+
+Die Bausteine sind austauschbar: Erscheint ein besseres Modell, wird es angeschlossen; Schicht und Textbestand bleiben.
 
 ## 2. Drei Stellen, eine Richtung
 
@@ -58,6 +62,12 @@ Der Sekretär setzt die Namen wieder ein und stellt das Ergebnis und die offenen
 
 **Regel für den Inhalt:** Es werden alle Varianten dargestellt; keine wird ausgewählt, und Personen werden nicht bewertet. Die Auswahl trifft ein Mensch.
 
+## 3a. Das Verzeichnis der Beteiligten
+
+Wer je ein Theaterstück gelesen hat, kennt die Lösung: Vor dem Text stehen die handelnden Personen – wer wer ist und in welchem Verhältnis zu den anderen. Dieses Verzeichnis gibt beim Lesen die Ordnung vor. Die Idee ist so alt wie das Drama und stammt nicht von mir.
+
+Übertragen auf Unterlagen: Die prüfende Person benennt die wesentlichen Beteiligten und ihre Rollen; jede erhält eine Marke, die in allen Unterlagen gleich bleibt. Dem Modell ist gleichgültig, ob dort ein Name oder »Beteiligter 1, Berater der Gesellschaft« steht – der Sachverhalt bleibt lesbar, die Person bleibt verborgen. Ohne ein solches Verzeichnis zerfällt ein anonymisierter Schriftwechsel in Sätze ohne Zusammenhang.
+
 ## 4. Kontrolle der Antwort
 
 Was das externe Modell liefert, wird nicht geglaubt, sondern geprüft – per Programm, am eigenen Textbestand:
@@ -73,7 +83,7 @@ Der offene Teil dieses Textbestands ist veröffentlicht: https://huggingface.co/
 - An erfundenen, unabhängig erstellten Schreiben sank der Anteil durchgelassener Angaben von 28,7 % über 6,0 % auf 2,1 %.
 - An echten Unterlagen überträgt sich das nicht ohne Weiteres: Nach menschlicher Freigabe fanden sich wiederholt noch Reste. Daraus entstanden eine zweite, listenunabhängige Kontrolle und eine dritte Stufe vor der Weitergabe.
 - Mit einem von der prüfenden Person vorgegebenen Verzeichnis der Beteiligten ließen sich an einem echten Fall 12 von 15 Tatsachen der richtigen Organisation zuordnen; ohne Verzeichnis keine.
-- Erprobt an **einem** echten Fall. Eine Wiederholung an weiteren Fällen und eine Prüfung durch Dritte stehen aus.
+- Offengelegt werden hier die Ergebnisse **eines** echten Falls. Mehr lässt die Vertraulichkeit nicht zu: Echte Fälle können nur mit Einwilligung der Betroffenen ausgewertet und nie im Wortlaut gezeigt werden. Jeder neue Fall schärft die Regeln; eine belastbare Statistik über viele Fälle und eine Prüfung durch Dritte sind genau das, wofür eine Förderung gebraucht wird.
 - Rechtlich ist das Ersetzen durch Rollenmarken eine **Pseudonymisierung**: Der Schlüssel bleibt lokal, die Zuordnung ist für die Kanzlei wiederherstellbar. Ob und unter welchen Bedingungen das berufsrechtlich genügt, ist nicht Gegenstand dieses Dokuments.
 - Keine Rechts- oder Steuerauskunft. Keine externe Bewertung.
 
@@ -85,11 +95,13 @@ Der offene Teil dieses Textbestands ist veröffentlicht: https://huggingface.co/
 | 02.2025 | Trennermethode nach Zhuravlev auf Grafikkarten | öffentlicher Beitrag vom 24.02.2025 |
 | 03–09.2025 | Arbeit mit großen Modellen; unzuverlässige Fundstellen; erste Prototypen einer geprüften Textdatenbank | öffentlicher Beitrag vom 02.09.2025 |
 | 08–10.2026 | heutige Programmbasis; Forschungsprotokoll mit Versuchen, auch misslungenen | veröffentlichter Korpus, 09.10.2026 |
-| 10.10.2026 | dieses Schema, Fassung 0.1 | dieses Dokument |
+| 10.10.2026 | dieses Schema, Fassung 0.1 und 0.2 | dieses Dokument |
 
-## 7. Offen
+## 7. Stand und Ausblick
 
-Anonymisierung ohne Reste an fremden Fällen; Zeitmessung mit unabhängigen Prüfpersonen; Zusammenführen der Antworten mehrerer Modelle; Regelwerke für weitere Berufe mit Schweigepflicht.
+Als Prototyp ist das Vorhaben abgeschlossen: Der Ablauf ist von Anfang bis Ende durchlaufen. Offen sind die Anonymisierung ohne Reste an fremden Fällen, die Zeitmessung mit unabhängigen Prüfpersonen, das Zusammenführen der Antworten mehrerer Modelle, ein Austauschformat für Rückmeldungen aus der Praxis und Regelwerke für weitere Berufe mit Schweigepflicht.
+
+Für die Fortführung gibt es zwei Wege, die sich nicht ausschließen: ein offenes Werkzeug, das Kanzleien selbst betreiben, oder ein fertiges Produkt eines Softwarehauses auf dieser Grundlage. Das Schema ist dafür ausgelegt, dass ein Softwarehaus mittlerer Größe es umsetzen kann.
 
 ---
 
@@ -97,12 +109,12 @@ Anonymisierung ohne Reste an fremden Fällen; Zeitmessung mit unabhängigen Prü
 
 ## 1. Starting point
 
-Anyone who examines confidential figures and letters faces a poor choice: do without capable language models, or hand documents to a central provider. Models that run on one's own hardware answer hard professional questions markedly worse than the large ones, and a single person cannot close that gap. Large models, in turn, cite provisions that do not exist.
+Large language models are built by large teams; for a small firm or a single accountant, competing with them is pointless — and unnecessary. Large audit and advisory companies have their own solutions. The question is a different one: what are ordinary professionals to do who depend on these models although the models often state things that are false and must not see confidential documents?
 
-The scheme therefore combines three things, each known on its own, into one workflow:
+The answer of this scheme: **trust your own body of texts and check everything the large models say against it** — through the lens of your own training, knowledge and practice. To that end, three things, each known on its own, are combined into one workflow:
 
 1. a **local layer** that reads the documents, recognises the parties and replaces them with role markers before anything leaves the machine;
-2. **large external language models** that see only this sheet and do the professional work;
+2. **large external language models** that see only this sheet and do the professional work — interchangeable as soon as a better one appears;
 3. an **own, verified body of official texts** against which every answer is checked by code — followed by restoring the names, again locally.
 
 ## 2. Three positions, one direction
@@ -119,6 +131,12 @@ The **examiner** states in free words what the matter is about and decides at th
 
 **Rule for content:** all variants are presented; none is chosen, and persons are not judged. A human makes the choice.
 
+## 3a. The cast of characters
+
+Anyone who has read a play knows the solution: before the text comes the list of characters — who is who, and how they relate to one another. That list sets the order for reading. The idea is as old as drama and is not mine.
+
+Applied to documents: the examiner names the essential parties and their roles; each gets a marker that stays the same across all documents. To the model it makes no difference whether a name stands there or "party 1, adviser to the company" — the facts remain readable, the person remains hidden. Without such a list, anonymised correspondence falls apart into sentences without connection.
+
 ## 4. Checking the answer
 
 What the external model delivers is not believed but checked — by code, against the own body of texts: does the cited provision, paragraph and number exist; does the citation come from the version in force in the year in question; amounts, interest, surcharges and deadlines are recalculated, not copied; with several models, the answers are laid side by side: agreement, majority, deviation.
@@ -127,8 +145,12 @@ The open part of this body of texts is published: https://huggingface.co/dataset
 
 ## 5. What has been measured — and what has not
 
-On invented, independently written letters the share of details let through fell from 28.7 % to 6.0 % to 2.1 %. This does not carry over to real documents without more: after human release, remnants were repeatedly found, which led to a second, list-independent check and a third stage before release. With a list of parties given by the examiner, 12 of 15 facts in one real case could be attributed to the right organisation; without the list, none. Tested on **one** real case; repetition on further cases and review by third parties are outstanding. Legally, replacing names with role markers is **pseudonymisation**: the key stays local and the mapping can be restored by the firm; whether and under which conditions this satisfies professional secrecy rules is outside the scope of this document. Not legal or tax advice. No external evaluation.
+On invented, independently written letters the share of details let through fell from 28.7 % to 6.0 % to 2.1 %. This does not carry over to real documents without more: after human release, remnants were repeatedly found, which led to a second, list-independent check and a third stage before release. With a list of parties given by the examiner, 12 of 15 facts in one real case could be attributed to the right organisation; without the list, none. Disclosed here are the results of **one** real case. Confidentiality allows no more: real cases can be evaluated only with the consent of those concerned and can never be shown verbatim. Every new case sharpens the rules; sound statistics over many cases and review by third parties are exactly what funding is needed for. Legally, replacing names with role markers is **pseudonymisation**: the key stays local and the mapping can be restored by the firm; whether and under which conditions this satisfies professional secrecy rules is outside the scope of this document. Not legal or tax advice. No external evaluation.
 
 ## 6. How it came about
 
-Work on AI for confidential financial and tax data since 2024 (message to the tax office of 24 Sep 2024; public post of 17 May 2024); Zhuravlev's separator method on GPUs in February 2025 (public post of 24 Feb 2025); work with large models, unreliable citations and first prototypes of a verified text database between March and September 2025 (public post of 2 Sep 2025); today's code base since August 2026; the open corpus published on 9 Oct 2026; this scheme, version 0.1, on 10 Oct 2026.
+Work on AI for confidential financial and tax data since 2024 (message to the tax office of 24 Sep 2024; public post of 17 May 2024); Zhuravlev's separator method on GPUs in February 2025 (public post of 24 Feb 2025); work with large models, unreliable citations and first prototypes of a verified text database between March and September 2025 (public post of 2 Sep 2025); today's code base since August 2026; the open corpus published on 9 Oct 2026; this scheme, version 0.1 and 0.2, on 10 Oct 2026.
+
+## 7. Status and outlook
+
+As a prototype the project is complete: the workflow has been run from beginning to end. For continuation there are two routes that do not exclude each other: an open tool that firms run themselves, or a finished product by a software house on this basis. The scheme is laid out so that a software house of medium size can implement it.
