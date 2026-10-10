@@ -1,0 +1,14 @@
+{
+  "title": "Schweigepflicht-Gateway: Arbeitsschema / working scheme (version 0.2, not final)",
+  "description": "<p>Working scheme (version 0.2 of 10 October 2026, not final) for processing confidential documents with large language models without handing over the documents themselves: a local layer that recognises the parties and replaces them with role markers, exchangeable external language models that see only the marked text, and a verified body of official texts against which every answer is checked by program before the names are restored locally. Text in German, English and Russian. The program code will follow in separate publications.</p>",
+  "creators": [{"name": "Sevriukov, Sergei", "affiliation": "LeckerMath, Dortmund"}],
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "license": "cc-by-4.0",
+  "language": "deu",
+  "version": "0.2",
+  "keywords": ["pseudonymisation", "large language models", "professional secrecy", "retrieval-augmented generation", "tax law", "Germany"],
+  "related_identifiers": [
+    {"identifier": "https://leckermath.de/arbeitsschema.html", "relation": "isIdenticalTo", "scheme": "url"}
+  ]
+}
