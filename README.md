@@ -6,6 +6,8 @@
 
 Autor: Sergei Sevriukov, LeckerMath, Dortmund · https://leckermath.de · Text: CC BY 4.0
 
+DOI dieser Fassung / of this version: https://doi.org/10.5281/zenodo.23282324 · alle Fassungen / all versions: https://doi.org/10.5281/zenodo.23282323
+
 Zum Hintergrund: 25 Jahre Bank, interne Kontrolle und Prüfung; Schulungen und Zertifizierung im Qualitätsmanagement (ISO 9001, internes Audit). Der Beitrag dieses Schemas liegt in der Organisation des Ablaufs, nicht in besonderem Programmcode.
 
 ---
