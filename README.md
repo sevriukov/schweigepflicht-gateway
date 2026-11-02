@@ -1,8 +1,8 @@
 # Schweigepflicht-Gateway: Arbeitsschema / working scheme
 
-**Stand: 10.10.2026 · Fassung 0.2 – nicht endgültig.** Dieses Dokument beschreibt das Schema, nach dem ich vertrauliche Unterlagen mit großen Sprachmodellen bearbeite, ohne die Unterlagen selbst herauszugeben. Der Programmcode folgt in eigenen Veröffentlichungen.
+**Stand: 02.11.2026 · Fassung 0.3 – nicht endgültig.** Dieses Dokument beschreibt das Schema, nach dem ich vertrauliche Unterlagen mit großen Sprachmodellen bearbeite, ohne die Unterlagen selbst herauszugeben. Der Programmcode folgt in eigenen Veröffentlichungen.
 
-*Status: 10 Oct 2026 · version 0.2 – not final. This document describes the scheme by which I process confidential documents with large language models without handing over the documents themselves. The code will follow in separate publications. English and Russian versions below. / Русская версия — в конце.*
+*Status: 2 Nov 2026 · version 0.3 – not final. This document describes the scheme by which I process confidential documents with large language models without handing over the documents themselves. The code will follow in separate publications. English and Russian versions below. / Русская версия — в конце.*
 
 Autor: Sergei Sevriukov, LeckerMath, Dortmund · https://leckermath.de · Text: CC BY 4.0
 
@@ -99,6 +99,13 @@ Der offene Teil dieses Textbestands ist veröffentlicht: https://huggingface.co/
 | 08–10.2026 | heutige Programmbasis; Forschungsprotokoll mit Versuchen, auch misslungenen | veröffentlichter Korpus, 09.10.2026 |
 | 10.10.2026 | dieses Schema, Fassung 0.1 und 0.2 | dieses Dokument |
 
+## 7a. Seit Fassung 0.2 (Stand 02.11.2026)
+
+- **Dritte Kontrollstufe** in der Zusammenstellung des Austauschblatts: bestätigte Namen der Akte werden mit Toleranz für Schreibfehler, Fälle und Transliteration gesucht; Reste gehen nicht nach außen.
+- **Fallregister:** eine Maske je Person über alle Dokumente einer Akte, auch bei lateinischer und kyrillischer Schreibweise.
+- **Drei Sprachen** (Deutsch, Russisch, Englisch) an nachgebildeten Akten geprüft; jede gemeldete oder übersehene Lücke wurde als eigene Regel geschlossen.
+- **Programmcode:** [schweigepflicht-gateway-code v0.3.0](https://github.com/sevriukov/schweigepflicht-gateway-code) · **Rechtsgrundlage der Antworten (Anker):** offene Datenbank [Steuerbasis 1.0.1](https://leckermath.de/steuerbasis.html), Datensatz [german-tax-law-corpus](https://huggingface.co/datasets/sevriukov/german-tax-law-corpus).
+
 ## 7. Stand und Ausblick
 
 Als Prototyp ist das Vorhaben abgeschlossen: Der Ablauf ist von Anfang bis Ende durchlaufen. Offen sind die Anonymisierung ohne Reste an fremden Fällen, die Zeitmessung mit unabhängigen Prüfpersonen, das Zusammenführen der Antworten mehrerer Modelle, ein Austauschformat für Rückmeldungen aus der Praxis und Regelwerke für weitere Berufe mit Schweigepflicht.
@@ -152,6 +159,13 @@ On invented, independently written letters the share of details let through fell
 ## 6. How it came about
 
 Work on AI for confidential financial and tax data since 2024 (message to the tax office of 24 Sep 2024; public post of 17 May 2024); Zhuravlev's separator method on GPUs in February 2025 (public post of 24 Feb 2025); work with large models, unreliable citations and first prototypes of a verified text database between March and September 2025 (public post of 2 Sep 2025); today's code base since August 2026; the open corpus published on 9 Oct 2026; this scheme, version 0.1 and 0.2, on 10 Oct 2026.
+
+## 7a. Since version 0.2 (status 2 Nov 2026)
+
+- **Third control stage** when the exchange sheet is assembled: confirmed names of the file are searched with tolerance for typos, grammatical cases and transliteration; remnants do not leave the firm.
+- **Case register:** one mask per person across all documents of a file, also across Latin and Cyrillic spellings.
+- **Three languages** (German, Russian, English) tested on simulated files; every gap reported or missed became a rule of its own.
+- **Code:** [schweigepflicht-gateway-code v0.3.0](https://github.com/sevriukov/schweigepflicht-gateway-code) · **Legal anchor for answers:** open database [Steuerbasis 1.0.1](https://leckermath.de/steuerbasis.html), dataset [german-tax-law-corpus](https://huggingface.co/datasets/sevriukov/german-tax-law-corpus).
 
 ## 7. Status and outlook
 
