@@ -6,7 +6,7 @@
 
 Autor: Sergei Sevriukov, LeckerMath, Dortmund · https://leckermath.de · Text: CC BY 4.0
 
-DOI dieser Fassung / of this version: https://doi.org/10.5281/zenodo.23282324 · alle Fassungen / all versions: https://doi.org/10.5281/zenodo.23282323
+DOI dieser Fassung / of this version: https://doi.org/10.5281/zenodo.23879202 · alle Fassungen / all versions: https://doi.org/10.5281/zenodo.23282323
 
 Zum Hintergrund: 25 Jahre Bank, interne Kontrolle und Prüfung; Schulungen und Zertifizierung im Qualitätsmanagement (ISO 9001, internes Audit). Der Beitrag dieses Schemas liegt in der Organisation des Ablaufs, nicht in besonderem Programmcode.
 
@@ -104,7 +104,7 @@ Der offene Teil dieses Textbestands ist veröffentlicht: https://huggingface.co/
 - **Dritte Kontrollstufe** in der Zusammenstellung des Austauschblatts: bestätigte Namen der Akte werden mit Toleranz für Schreibfehler, Fälle und Transliteration gesucht; Reste gehen nicht nach außen.
 - **Fallregister:** eine Maske je Person über alle Dokumente einer Akte, auch bei lateinischer und kyrillischer Schreibweise.
 - **Drei Sprachen** (Deutsch, Russisch, Englisch) an nachgebildeten Akten geprüft; jede gemeldete oder übersehene Lücke wurde als eigene Regel geschlossen.
-- **Programmcode:** [schweigepflicht-gateway-code v0.3.0](https://github.com/sevriukov/schweigepflicht-gateway-code) · **Rechtsgrundlage der Antworten (Anker):** offene Datenbank [Steuerbasis 1.0.1](https://leckermath.de/steuerbasis.html), Datensatz [german-tax-law-corpus](https://huggingface.co/datasets/sevriukov/german-tax-law-corpus).
+- **Programmcode:** [schweigepflicht-gateway-code v0.4.1](https://github.com/sevriukov/schweigepflicht-gateway-code) · **Rechtsgrundlage der Antworten (Anker):** offene Datenbank [Steuerbasis 1.1.1](https://leckermath.de/steuerbasis.html), Datensatz [german-tax-law-corpus](https://huggingface.co/datasets/sevriukov/german-tax-law-corpus).
 
 ## 7. Stand und Ausblick
 
@@ -165,7 +165,7 @@ Work on AI for confidential financial and tax data since 2024 (message to the ta
 - **Third control stage** when the exchange sheet is assembled: confirmed names of the file are searched with tolerance for typos, grammatical cases and transliteration; remnants do not leave the firm.
 - **Case register:** one mask per person across all documents of a file, also across Latin and Cyrillic spellings.
 - **Three languages** (German, Russian, English) tested on simulated files; every gap reported or missed became a rule of its own.
-- **Code:** [schweigepflicht-gateway-code v0.3.0](https://github.com/sevriukov/schweigepflicht-gateway-code) · **Legal anchor for answers:** open database [Steuerbasis 1.0.1](https://leckermath.de/steuerbasis.html), dataset [german-tax-law-corpus](https://huggingface.co/datasets/sevriukov/german-tax-law-corpus).
+- **Code:** [schweigepflicht-gateway-code v0.4.1](https://github.com/sevriukov/schweigepflicht-gateway-code) · **Legal anchor for answers:** open database [Steuerbasis 1.1.1](https://leckermath.de/steuerbasis.html), dataset [german-tax-law-corpus](https://huggingface.co/datasets/sevriukov/german-tax-law-corpus).
 
 ## 7. Status and outlook
 
